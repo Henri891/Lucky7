@@ -4,6 +4,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
+        //Toimintojen ja muuttujien alustus
         Random r = new Random();
         Scanner in = new Scanner(System.in);
         int tulos1 = 0;
@@ -12,10 +13,12 @@ public class Main {
         String jatketaanko = "";
         String raha = "";
 
+        //Ohjelma alkaa
         System.out.println("Kuinka paljon haluat syöttää rahaa koneeseen?");
         raha = in.nextLine();
         int i = Integer.parseInt(raha) ;
 
+        //Päälooppi
         do {
             tulos1 = r.nextInt(10) + 1;
             System.out.println(tulos1);
@@ -24,7 +27,7 @@ public class Main {
             tulos3 = r.nextInt(10) + 1;
             System.out.println(tulos3);
 
-
+            //Voittojen tarkistus
             if(tulos1 == 7 && tulos2 == 7 && tulos3 == 7) {
                 System.out.println("Voitit 10€");
                 i += 10;
@@ -46,6 +49,7 @@ public class Main {
 
         } while(i > 0 && !jatketaanko.equalsIgnoreCase("e"));
 
+        //Ilmoitetaan pelaajalle voittiko hän ja kuinka palon
         if(i == 0) {
             System.out.println("Sinulla ei ole enää rahaa jäljellä, hävisit.");
         } else {
