@@ -43,7 +43,7 @@ public class Main {
             if(i == 0) {
                 break;
             }
-                System.out.println("Sinulla on " + i + "€, Haluatko jatkaa pelaamista?");
+                System.out.println("Sinulla on jäljellä " + i + "€, Haluatko jatkaa pelaamista?");
                 jatketaanko = in.nextLine();
 
 
@@ -53,7 +53,7 @@ public class Main {
         if(i == 0) {
             System.out.println("Sinulla ei ole enää rahaa jäljellä, hävisit.");
         } else {
-            System.out.println("Voitit " + i);
+            System.out.println("Voitit " + i + "€");
         }
 
     }
