@@ -44,7 +44,7 @@ public class Main {
                 jatketaanko = in.nextLine();
 
 
-        } while(i > 0 && jatketaanko.equalsIgnoreCase("y"));
+        } while(i > 0 && !jatketaanko.equalsIgnoreCase("e"));
 
         if(i == 0) {
             System.out.println("Sinulla ei ole enää rahaa jäljellä, hävisit.");
