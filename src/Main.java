@@ -40,21 +40,20 @@ public class Main {
             }
                 i--;
 
-            if(i == 0) {
+                if(i == 0) {
                 break;
-            }
+                }
+
                 System.out.println("Sinulla on jäljellä " + i + "€, Haluatko jatkaa pelaamista?");
                 jatketaanko = in.nextLine();
 
-
         } while(i > 0 && !jatketaanko.equalsIgnoreCase("e"));
 
-        //Ilmoitetaan pelaajalle voittiko hän ja kuinka palon
+        //Ilmoitetaan pelaajalle voittiko hän ja kuinka paljon
         if(i == 0) {
-            System.out.println("Sinulla ei ole enää rahaa jäljellä, hävisit.");
+            System.out.println("Sinulla ei ole enään rahaa jäljellä, hävisit.");
         } else {
-            System.out.println("Voitit " + i + "€");
+            System.out.println("Onneksi olkoon, voitit " + i + "€!");
         }
-
     }
 }
